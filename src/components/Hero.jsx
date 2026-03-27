@@ -18,18 +18,15 @@ export default function Hero() {
             <span>Built specifically for Banks, NBFCs & MFIs</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight">
-            AI-First Infrastructure for <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500">
-              Modern Financial Services
-            </span>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-white leading-tight">
+            Architected for <br /> Autonomous Lending
           </h1>
 
           <p className="text-xl md:text-2xl text-white font-medium mb-4 max-w-3xl mx-auto">
-            Traditional LOS is a system of record. <span className="text-red">Vitto is a system of intelligence.</span>
+            Traditional LOS is a system of record. <span className="text-red">Vitto is a deterministic execution engine.</span>
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            This is not retrofitted AI. This is not fragmented vendors. Vitto is a unified execution environment designed from the ground up for institution-grade decisioning and full-stack operational automation.
+            We do not patch legacy stacks with generic LLM wrappers. Vitto is a vertically integrated operating system that bakes your credit policy directly into the data layer to execute underwriting and collections programmatically.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">

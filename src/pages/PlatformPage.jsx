@@ -66,13 +66,13 @@ export default function PlatformPage() {
             The Vitto Architecture
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-white leading-tight">
-            Institutional-Grade <br /> AI Infrastructure
+            Core Architecture for <br /> Credit Operations
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
-            A modular, full-stack decisioning engine engineered exclusively for Banks, NBFCs, and MFIs. We connect disparate legacy systems through unified APIs and an autonomous Agentic AI layer.
+            A full-stack engine executing deterministic credit logic natively. We bypass API latency by embedding your credit policy directly into a specialized Small Language Model, executing underwriting and collections automatically without human orchestration.
           </p>
           <div className="inline-flex border border-white/10 rounded-full px-6 py-3 bg-white/5 backdrop-blur-sm text-lg md:text-xl font-bold text-white shadow-xl">
-            Legacy vendors sell software wrappers. <span className="text-red ml-2">Vitto delivers autonomous infrastructure.</span>
+            Legacy vendors sell software wrappers. <span className="text-red ml-2">Vitto delivers programmatic execution.</span>
           </div>
         </div>
       </section>
