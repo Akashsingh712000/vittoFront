@@ -3,6 +3,7 @@ import Problem from './components/Problem';
 import Solution from './components/Solution';
 import AILayer from './components/AILayer';
 import Impact from './components/Impact';
+import SocialProof from './components/SocialProof';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Solution />
         <AILayer />
         <Impact />
+        <SocialProof />
       </main>
     </div>
   );
