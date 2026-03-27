@@ -5,6 +5,7 @@ import AILayer from './components/AILayer';
 import Impact from './components/Impact';
 import SocialProof from './components/SocialProof';
 import CtaBanner from './components/CtaBanner';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <SocialProof />
         <CtaBanner />
       </main>
+      <Footer />
     </div>
   );
 }
