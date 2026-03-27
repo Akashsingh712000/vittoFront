@@ -72,10 +72,10 @@ export default function SocialProof() {
 
               <div className="flex items-center gap-4 mt-auto">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-white/5 to-white/10 border border-white/10 flex items-center justify-center shrink-0 group-hover:border-red/30 transition-colors duration-500">
-                  <span className="text-white font-bold text-xl">{test.name.charAt(0)}</span>
+                  <span className="text-white font-bold text-xl">{test.author.charAt(0)}</span>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold tracking-tight text-lg">{test.name}</h4>
+                  <h4 className="text-white font-bold tracking-tight text-lg">{test.author}</h4>
                   <p className="text-sm text-gray-400 mt-0.5">{test.designation}, <span className="text-red/90 font-medium">{test.institution}</span></p>
                 </div>
               </div>
