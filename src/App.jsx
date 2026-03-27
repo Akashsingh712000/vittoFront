@@ -4,6 +4,7 @@ import Solution from './components/Solution';
 import AILayer from './components/AILayer';
 import Impact from './components/Impact';
 import SocialProof from './components/SocialProof';
+import CtaBanner from './components/CtaBanner';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <AILayer />
         <Impact />
         <SocialProof />
+        <CtaBanner />
       </main>
     </div>
   );
