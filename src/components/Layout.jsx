@@ -11,7 +11,7 @@ export default function Layout() {
           </Link>
           <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-300">
             <Link to="/platform" className="hover:text-white transition-colors">Platform</Link>
-            <a href="#" className="hover:text-white transition-colors">Solutions</a>
+            <Link to="/automation" className="hover:text-white transition-colors">Automation</Link>
             <a href="#" className="hover:text-white transition-colors">Company</a>
           </nav>
           <div className="flex items-center gap-4">
