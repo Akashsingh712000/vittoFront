@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import PlatformPage from './pages/PlatformPage';
 import AutomationPage from './pages/AutomationPage';
 import ArticlePage from './pages/ArticlePage';
+import SignUpPage from './pages/SignUpPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="automation" element={<AutomationPage />} />
           <Route path="article" element={<ArticlePage />} />
         </Route>
+        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -18,9 +18,9 @@ export default function Layout() {
             <button className="hidden sm:block text-sm font-medium text-gray-300 hover:text-white transition-colors">
               Sign In
             </button>
-            <button className="px-5 py-2.5 bg-white text-navy font-medium text-sm rounded-lg hover:bg-gray-100 transition-colors">
+            <Link to="/signup" className="px-5 py-2.5 bg-white text-navy font-medium text-sm rounded-lg hover:bg-gray-100 transition-colors">
               Request Demo
-            </button>
+            </Link>
           </div>
         </div>
       </header>
