@@ -9,7 +9,7 @@ export default function Solution() {
     },
     {
       title: "Unified Architecture",
-      description: "A single, composable data layer that seamlessly integrates your LOS, LMS, and CRM into one holistic, automated edge-to-edge system.",
+      description: "A single, composable data layer that natively integrates your LOS, LMS, and CRM into one holistic, automated edge-to-edge system.",
       icon: Merge,
     },
     {

@@ -3,21 +3,21 @@ import { Quote } from 'lucide-react';
 export default function SocialProof() {
   const testimonials = [
     {
-      quote: "Vitto didn't just digitize our lending process; they fundamentally transformed our risk engine. We cut our decision time by 85% while simultaneously dropping NPAs.",
-      name: "Sarah Chen",
+      quote: "Vitto didn't just digitize our lending process; they rebuilt our core risk engine. We cut our decision time by 85% while simultaneously dropping NPAs.",
+      author: "Sarah Jenkins",
       designation: "Chief Risk Officer",
       institution: "Aura Finance (NBFC)"
     },
     {
-      quote: "The Agentic AI layer is unparalleled. It continuously adapts our collection strategies, resulting in a 40% increase in early-stage recoveries within the first quarter.",
-      name: "Marcus Thorne",
+      quote: "The autonomous layer operates with strict determinism. It continually adapts our collection strategies, resulting in a 40% increase in early-stage recoveries within the first quarter.",
+      author: "Michael Chang",
       designation: "Head of Digital Collections",
       institution: "First Pioneer Bank"
     }
   ];
 
   const partners = [
-    "Nova Bank", "Equitas Lending", "Pinnacle MFI", "Vertex Capital", "Synergy Finance"
+    "Nova Bank", "Equitas Lending", "Pinnacle MFI", "Vertex Capital", "Core Finance"
   ];
 
   return (

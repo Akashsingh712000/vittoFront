@@ -68,9 +68,12 @@ export default function PlatformPage() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-white leading-tight">
             Institutional-Grade <br /> AI Infrastructure
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
             A modular, full-stack decisioning engine engineered exclusively for Banks, NBFCs, and MFIs. We connect disparate legacy systems through unified APIs and an autonomous Agentic AI layer.
           </p>
+          <div className="inline-flex border border-white/10 rounded-full px-6 py-3 bg-white/5 backdrop-blur-sm text-lg md:text-xl font-bold text-white shadow-xl">
+            Legacy vendors sell software wrappers. <span className="text-red ml-2">Vitto delivers autonomous infrastructure.</span>
+          </div>
         </div>
       </section>
 

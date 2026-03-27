@@ -74,9 +74,12 @@ export default function AutomationPage() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-white leading-tight">
             Full Stack <br /> Automation
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
             A comprehensive suite of 29+ deeply integrated modules structured into 5 foundational layers. Vitto replaces fragmented vendor ecosystems with a unified operational infrastructure.
           </p>
+          <div className="inline-flex border border-white/10 rounded-full px-6 py-3 bg-white/5 backdrop-blur-sm text-lg md:text-xl font-bold text-white shadow-xl transform transition-transform hover:scale-105 hover:border-red/30">
+            Traditional tools execute rigid workflows. <span className="text-red ml-2">Vitto enables dynamic, real-time decisioning.</span>
+          </div>
         </div>
       </section>
 

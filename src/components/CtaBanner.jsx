@@ -17,8 +17,8 @@ export default function CtaBanner() {
                 Discover the key to <br className="hidden md:block" />
                 grow your business
               </h2>
-              <p className="text-white/80 text-lg md:text-xl font-medium max-w-xl mx-auto lg:mx-0">
-                Deploy Vitto's agentic infrastructure today to automate decisioning, eliminate risk blind spots, and drastically reduce operational overhead.
+              <p className="text-white/90 text-lg md:text-xl font-medium max-w-xl mx-auto lg:mx-0 mt-4">
+                Implement Vitto's core infrastructure today to automate decisioning, eliminate risk blind spots, and drastically reduce operational overhead.
               </p>
             </div>
 

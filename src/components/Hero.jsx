@@ -26,10 +26,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-white font-medium mb-4 max-w-3xl mx-auto">
-            Traditional LOS is a transaction system. <span className="text-red">Vitto is a decisioning system.</span>
+            Traditional LOS is a system of record. <span className="text-red">Vitto is a system of intelligence.</span>
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            This is not retrofitted AI. This is not fragmented vendors. Vitto is a unified, agentic infrastructure designed from the ground up for institution-grade decisioning and full-stack operational automation.
+            This is not retrofitted AI. This is not fragmented vendors. Vitto is a unified execution environment designed from the ground up for institution-grade decisioning and full-stack operational automation.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
