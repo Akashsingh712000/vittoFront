@@ -23,10 +23,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-white font-medium mb-4 max-w-3xl mx-auto">
-            Traditional LOS is a system of record. <span className="text-red">Vitto is a deterministic execution engine.</span>
+            Legacy LOS manages applications. <span className="text-red">Vitto evaluates risk and executes decisions.</span>
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            We do not patch legacy stacks with generic LLM wrappers. Vitto is a vertically integrated operating system that bakes your credit policy directly into the data layer to execute underwriting and collections programmatically.
+            A complete platform that combines credit policies, rule engines, and machine learning models to evaluate borrower risk and automate operations from underwriting to collections in real time.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">

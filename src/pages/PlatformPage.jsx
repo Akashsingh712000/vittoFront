@@ -69,10 +69,10 @@ export default function PlatformPage() {
             Core Architecture for <br /> Credit Operations
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
-            A full-stack engine executing deterministic credit logic natively. We bypass API latency by embedding your credit policy directly into a specialized Small Language Model, executing underwriting and collections automatically without human orchestration.
+            A system that combines credit policies, rule engines, and machine learning models to evaluate borrower risk and automate underwriting and collections in real time.
           </p>
           <div className="inline-flex border border-white/10 rounded-full px-6 py-3 bg-white/5 backdrop-blur-sm text-lg md:text-xl font-bold text-white shadow-xl">
-            Legacy vendors sell software wrappers. <span className="text-red ml-2">Vitto delivers programmatic execution.</span>
+            Legacy LOS manages applications. <span className="text-red ml-2">Vitto evaluates risk and executes decisions.</span>
           </div>
         </div>
       </section>

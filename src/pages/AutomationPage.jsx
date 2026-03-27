@@ -75,10 +75,10 @@ export default function AutomationPage() {
             Operational Layer <br /> Architecture
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
-            We have collapsed 29 disconnected lifecycle modules into five native execution layers. By operating lead management, underwriting, and collections from a single database schema, Vitto eliminates API breakage and structural latency.
+            A full suite of operational modules powered by credit policies, rule engines, and machine learning models to evaluate borrower risk and automate your workflows in real time.
           </p>
           <div className="inline-flex border border-white/10 rounded-full px-6 py-3 bg-white/5 backdrop-blur-sm text-lg md:text-xl font-bold text-white shadow-xl transform transition-transform hover:scale-105 hover:border-red/30">
-            Traditional tools map static workflows. <span className="text-red ml-2">Vitto executes logic programmatically.</span>
+            Legacy LOS manages applications. <span className="text-red ml-2">Vitto evaluates risk and executes decisions.</span>
           </div>
         </div>
       </section>
