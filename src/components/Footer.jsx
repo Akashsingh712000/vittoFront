@@ -1,4 +1,4 @@
-import { ArrowRight, Twitter, Linkedin, Github } from 'lucide-react';
+import { ArrowRight, MessageCircle, Briefcase, Globe } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -84,15 +84,15 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <a href="#" className="text-gray-500 hover:text-white transition-colors">
               <span className="sr-only">Twitter</span>
-              <Twitter className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5" />
             </a>
             <a href="#" className="text-gray-500 hover:text-white transition-colors">
               <span className="sr-only">LinkedIn</span>
-              <Linkedin className="w-5 h-5" />
+              <Briefcase className="w-5 h-5" />
             </a>
             <a href="#" className="text-gray-500 hover:text-white transition-colors">
-              <span className="sr-only">GitHub</span>
-              <Github className="w-5 h-5" />
+              <span className="sr-only">Website</span>
+              <Globe className="w-5 h-5" />
             </a>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function Layout() {
           <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-300">
             <Link to="/platform" className="hover:text-white transition-colors">Platform</Link>
             <Link to="/automation" className="hover:text-white transition-colors">Automation</Link>
-            <a href="#" className="hover:text-white transition-colors">Company</a>
+            <Link to="/article" className="hover:text-white transition-colors">Insights</Link>
           </nav>
           <div className="flex items-center gap-4">
             <button className="hidden sm:block text-sm font-medium text-gray-300 hover:text-white transition-colors">

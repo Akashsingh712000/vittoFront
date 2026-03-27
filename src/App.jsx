@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import PlatformPage from './pages/PlatformPage';
 import AutomationPage from './pages/AutomationPage';
+import ArticlePage from './pages/ArticlePage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="platform" element={<PlatformPage />} />
           <Route path="automation" element={<AutomationPage />} />
+          <Route path="article" element={<ArticlePage />} />
         </Route>
       </Routes>
     </BrowserRouter>
