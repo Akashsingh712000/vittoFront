@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Solution from './components/Solution';
+import AILayer from './components/AILayer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <Problem />
         <Solution />
+        <AILayer />
       </main>
     </div>
   );
