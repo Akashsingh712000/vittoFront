@@ -91,10 +91,10 @@ export default function Problem() {
         <div className="mt-20 max-w-4xl mx-auto text-center bg-white/5 border border-white/10 p-8 md:p-12 rounded-3xl backdrop-blur-sm relative overflow-hidden group">
           <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-red to-transparent opacity-50 group-hover:opacity-100 transition-opacity" />
           <p className="text-lg md:text-2xl font-bold text-white leading-tight mb-4">
-            Traditional LOS processes applications. <span className="text-red">Vitto makes intelligent decisions.</span>
+            Legacy LOS manages applications. <span className="text-red">Vitto evaluates risk and executes decisions.</span>
           </p>
           <p className="text-base md:text-xl text-gray-400 font-medium leading-relaxed">
-            Legacy LOS tools execute workflows. Vitto enables real-time AI decisioning across the lending lifecycle.
+            A system that combines credit policies, rule engines, and machine learning models to automate underwriting and collections in real time.
           </p>
         </div>
 

@@ -28,8 +28,8 @@ export default function AILayer() {
       icon: BarChart3,
     },
     {
-      name: "Agentic AI Layer",
-      description: "Autonomous reasoning engine driving end-to-end intelligent operational workflows.",
+      name: "Decision Engine",
+      description: "A centralized system that executes credit policies across all operational workflows.",
       icon: Binary,
     }
   ];

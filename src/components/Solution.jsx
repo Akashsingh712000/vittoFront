@@ -36,15 +36,15 @@ export default function Solution() {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-white leading-[1.1]">
-              AI-native decisioning <br />
+              Rule-driven risk evaluation <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red to-red/60">
-                meets full stack
+                meets automated
               </span> <br />
-              operational automation
+              credit operations
             </h2>
             
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-10">
-              We replace brittle rules engines and disjointed legacy platforms with a dynamic, learning infrastructure that adapts to market conditions and unique borrower profiles in real-time.
+              We replace fragmented legacy systems with a single platform that evaluates borrower risk using your exact credit policy and automates workflows instantly.
             </p>
           </div>
 

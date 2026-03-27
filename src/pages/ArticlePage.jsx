@@ -1,4 +1,4 @@
-import { ArrowLeft, Clock, Share2, Linkedin, Twitter } from 'lucide-react';
+import { ArrowLeft, Clock, Share2, Briefcase, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function ArticlePage() {
@@ -35,10 +35,10 @@ export default function ArticlePage() {
           </div>
           <div className="flex items-center gap-3">
             <button className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
-              <Linkedin className="w-4 h-4" />
+              <Briefcase className="w-4 h-4 text-gray-400" />
             </button>
             <button className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
-              <Twitter className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4 text-gray-400" />
             </button>
             <button className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
               <Share2 className="w-4 h-4" />
@@ -55,7 +55,7 @@ export default function ArticlePage() {
           <p>
             The prevailing strategy for most institutions over the last two years has been the path of least resistance: <strong>Retrofitted AI</strong>. 
             This involves maintaining disparate legacy Loan Origination Systems (LOS), Loan Management Systems (LMS), and CRMs, while bolting on external AI wrappers or API-based microservices to handle localized automation. 
-            Conversely, an <strong>AI-Native Infrastructure</strong> demands a fundamental rearchitecture—a unified, composable data layer where deterministic risk engines and autonomous Small Language Models (SLMs) share the exact same synchronized state.
+            Conversely, an <strong>AI-Native Infrastructure</strong> demands a fundamental rearchitecture—a unified, composable data layer where risk rules and machine learning models operate on the same database.
           </p>
 
           <p>
@@ -133,7 +133,7 @@ export default function ArticlePage() {
           <div className="bg-red/10 border-l-4 border-red p-6 my-10 rounded-r-xl">
             <strong className="text-white block mb-2 font-bold text-lg">The Verdict</strong>
             <p className="m-0 text-gray-300">
-              Patching legacy systems with AI is akin to putting a jet engine on a horse-drawn carriage—the structural integrity will eventually fail under the speed of modern market demands. To achieve true agentic autonomy, instantaneous underwriting, and predictive collections, institutions must abandon the patchwork approach and transition to true, AI-Native unified infrastructure.
+              Patching legacy systems with AI is akin to putting a jet engine on a horse-drawn carriage—the structural integrity will eventually fail under the speed of modern market demands. To achieve instant underwriting and automated collections, institutions must abandon the patchwork approach and transition to a unified infrastructure.
             </p>
           </div>
 
