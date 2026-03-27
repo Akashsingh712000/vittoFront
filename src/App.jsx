@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import Problem from './components/Problem';
+import Solution from './components/Solution';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <main>
         <Hero />
         <Problem />
+        <Solution />
       </main>
     </div>
   );
