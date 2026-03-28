@@ -8,7 +8,7 @@ The website communicates complex decisioning systems in a clear, structured, and
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 Frontend URL: [https://your-frontend.vercel.app](https://vitto-front.vercel.app/)
 
