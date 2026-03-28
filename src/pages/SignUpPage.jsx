@@ -16,22 +16,37 @@ export default function SignUpPage() {
   const [orgType, setOrgType] = useState('');
   const [city, setCity] = useState('');
   const [loanSize, setLoanSize] = useState('');
+  
+  const [serverError, setServerError] = useState('');
 
-  const handleRequestOtp = (e) => {
+  const handleRequestOtp = async (e) => {
     e.preventDefault();
     if (!email || !phone) return;
     
     setAuthStage('loading_otp');
-    setTimeout(() => {
-      setAuthStage('verify_otp');
-    }, 1500);
+    setServerError('');
+    try {
+      const res = await fetch('http://localhost:4000/api/auth/send-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ identifier: email }) 
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setAuthStage('verify_otp');
+      } else {
+        setServerError(data.message || 'Failed to send OTP');
+        setAuthStage('initial');
+      }
+    } catch (err) {
+      setServerError('Network error. Ensure backend is running.');
+      setAuthStage('initial');
+    }
   };
 
   const handleOtpChange = (element, index) => {
     if (isNaN(element.value)) return;
-
     setOtp([...otp.map((d, idx) => (idx === index ? element.value : d))]);
-
     if (element.nextSibling && element.value !== "") {
       element.nextSibling.focus();
     }
@@ -43,25 +58,71 @@ export default function SignUpPage() {
     }
   };
 
-  const handleVerifyOtp = (e) => {
+  const handleVerifyOtp = async (e) => {
     e.preventDefault();
     const otpValue = otp.join('');
     if (otpValue.length !== 6) return;
     
     setAuthStage('loading_verify');
-    setTimeout(() => {
-      setAuthStage('org_details');
-    }, 1500);
+    setServerError('');
+    try {
+      const res = await fetch('http://localhost:4000/api/auth/verify-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ identifier: email, otp: otpValue })
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setAuthStage('org_details');
+      } else {
+        setServerError(data.message || 'Invalid OTP');
+        setAuthStage('verify_otp');
+      }
+    } catch (err) {
+      setServerError('Network error. Ensure backend is running.');
+      setAuthStage('verify_otp');
+    }
   };
 
-  const handleOrgSubmit = (e) => {
+  const handleOrgSubmit = async (e) => {
     e.preventDefault();
     if (!orgName || !orgType || !city || !loanSize) return;
 
     setAuthStage('loading_org');
-    setTimeout(() => {
-      setAuthStage('success');
-    }, 2000);
+    setServerError('');
+
+    let numericLoanBook = 0;
+    if (loanSize === '0-50cr') numericLoanBook = 50;
+    else if (loanSize === '50-500cr') numericLoanBook = 500;
+    else if (loanSize === '500-2000cr') numericLoanBook = 2000;
+    else if (loanSize === '2000cr+') numericLoanBook = 5000;
+
+    const mappedOrgType = orgType === 'bank' ? 'Bank' : (orgType === 'nbfc' ? 'NBFC' : 'MFI');
+
+    try {
+      const res = await fetch('http://localhost:4000/api/leads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          phone,
+          institution_name: orgName,
+          institution_type: mappedOrgType,
+          city: city,
+          loan_book_size: numericLoanBook
+        })
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setAuthStage('success');
+      } else {
+        setServerError(data.message || 'Failed to submit application');
+        setAuthStage('org_details');
+      }
+    } catch (err) {
+      setServerError('Network error. Ensure backend is running.');
+      setAuthStage('org_details');
+    }
   };
 
   // Condition Helpers
@@ -114,6 +175,12 @@ export default function SignUpPage() {
             </Link>
           )}
 
+          {serverError && (
+            <div className="mb-6 p-4 bg-red/10 border border-red/40 rounded-xl animate-in fade-in zoom-in-95 duration-300">
+              <p className="text-red text-sm font-semibold">{serverError}</p>
+            </div>
+          )}
+
           {/* headers for Step 1 */}
           {isStepOne && (
             <div className="mb-10 animate-in fade-in zoom-in-95 duration-300">
@@ -122,7 +189,7 @@ export default function SignUpPage() {
               <p className="text-gray-400 text-sm leading-relaxed">
                 {authStage === 'initial' || authStage === 'loading_otp' 
                   ? "Enter your organizational email and mobile number to receive a secure one-time passcode limit access to institutional participants."
-                  : `We've sent a 6-digit initialization code to ${email}.`}
+                  : `We've sent a 6-digit initialization code to ${email}. Please check your backend terminal for the mock OTP.`}
               </p>
             </div>
           )}
@@ -201,7 +268,6 @@ export default function SignUpPage() {
                     <option value="bank">Bank</option>
                     <option value="nbfc">NBFC</option>
                     <option value="mfi">MFI (Microfinance Institution)</option>
-                    <option value="fintech">Fintech / NeoBank</option>
                   </select>
                 </div>
               </div>
